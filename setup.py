@@ -28,7 +28,7 @@ files_with_substitutions = (
     os.path.join ("doc", "man-fr", "rubber.1"),
     os.path.join ("doc", "man-fr", "rubber-info.1"),
     os.path.join ("doc", "rubber.texi"),
-    os.path.join ("src", "version.py"),
+    os.path.join ("rubber", "version.py"),
 )
 
 manual_basename = os.path.join ("doc", "rubber.")
@@ -221,13 +221,13 @@ Metapost compilation).\
         "rubber.latex_modules",
     ),
     package_dir = {
-        "rubber" : "src",
+        "rubber" : "rubber",
     },
     package_data = {
         "rubber" : ["rules.ini"],
     },
     scripts = (
-        "rubber",
+        "rubber-cli",
         "rubber-info",
         "rubber-pipe",
     ),
